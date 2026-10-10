@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hairnergy Braids | Guelph braiding studio & hair store (design preview)</title>
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d0d0d;--stone:#f6f3ee;--line:#e7e3dc;--mute:#6f6a62;--g:#dc9a2b;--red:#c62828;--r:14px;--sh:0 14px 34px -14px rgba(0,0,0,.22);--fd:'Cormorant Garamond','Playfair Display',Georgia,serif;--fb:Manrope,system-ui,sans-serif;--sp:clamp(3.5rem,8vw,7rem);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+body{margin:0;font:400 1rem/1.65 var(--fb);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--fd);font-weight:600;letter-spacing:-.01em;line-height:1.02;margin:0}
+p{margin:0}a{color:inherit}button{font:inherit;color:inherit}
+.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.w{max-width:84rem;margin:0 auto;padding:0 1.25rem}.sec{padding:var(--sp) 0}.alt{background:var(--stone)}
+/* type hierarchy */
+.eyebrow{display:flex;align-items:center;gap:.7rem;margin-bottom:1rem;font:700 .72rem/1 var(--fb);letter-spacing:.16em;text-transform:uppercase}.eyebrow::before{content:"";width:1.8rem;height:2px;background:var(--g)}
+.h2{font-size:clamp(2.2rem,4.6vw,3.6rem)}.lede{font-size:1.05rem;color:var(--mute);max-width:34rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:0 1.7rem;border:1.5px solid transparent;border-radius:999px;font:700 .88rem var(--fb);letter-spacing:.02em;text-decoration:none;cursor:pointer;background:none;transition:transform .2s var(--ease),filter .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-1px)}.gold{background:var(--g);color:#000}.gold:hover{filter:brightness(1.07)}.dk{background:#000;color:#fff}.line{border-color:currentColor}.ghost{border-color:rgba(255,255,255,.5);color:#fff}.ghost:hover{background:rgba(255,255,255,.12)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.lk{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;font-weight:700;font-size:.88rem;text-decoration:none;border-bottom:2px solid var(--g);align-self:flex-end;white-space:nowrap}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:clamp(1.6rem,3vw,2.6rem)}
+/* fade-in */
+.js .fx{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}.js .fx.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .fx{opacity:1;transform:none;transition:none}*{scroll-behavior:auto!important}}
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.top{background:#000;color:#fff;text-align:center;font-size:.74rem;font-weight:600;letter-spacing:.06em;padding:.55rem}.top b{color:var(--g)}
+.hd{display:flex;align-items:center;gap:1rem;min-height:68px}.hd>a img{height:42px;display:block}
+nav.m{display:none;gap:2rem;margin:0 auto}nav.m a{display:inline-flex;align-items:center;min-height:48px;font-size:.84rem;font-weight:600;text-decoration:none}nav.m a:hover{color:var(--mute)}
+.hd .btn{margin-left:auto;min-height:44px;padding:0 1.3rem}.bag{position:relative;display:grid;place-items:center;width:48px;height:48px;border:0;background:none;cursor:pointer}
+.bag span{position:absolute;top:6px;right:3px;min-width:18px;height:18px;border-radius:9px;background:var(--g);font-size:.66rem;font-weight:800;display:grid;place-items:center;transform:scale(0);transition:transform .25s var(--ease)}.bag span.on{transform:scale(1)}
+/* hero */
+.hero{position:relative;display:flex;flex-direction:column;min-height:90svh;color:#fff;background:#141414;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% center}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.92))}
+.hb{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding-top:5rem;padding-bottom:2.2rem}.hb>div{max-width:44rem}
+.pill{display:inline-block;padding:.4rem .9rem;border-radius:999px;background:var(--g);color:#000;font:800 .7rem/1.2 var(--fb);letter-spacing:.1em;text-transform:uppercase}
+.hero h1{font-size:clamp(3.1rem,11vw,6.8rem);line-height:.96;font-weight:500;margin-top:1.3rem}
+.hair{position:relative;display:inline-block;font-style:italic}.hair::after{content:"";position:absolute;left:0;bottom:-.04em;width:100%;height:6px;border-radius:999px;background:var(--g)}
+.hero .s{margin-top:1.5rem;max-width:30rem;font-size:1.08rem;color:rgba(255,255,255,.86)}
+.hbt{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.8rem;max-width:26rem}
+.facts{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.16)}.facts .w{display:flex;align-items:center;justify-content:space-between;padding-top:1.1rem;padding-bottom:1.1rem}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);flex:1}.fg div{padding:0 .8rem}.fg div:first-child{padding-left:0}.fg div+div{border-left:1px solid rgba(255,255,255,.2)}
+.fg b{display:block;font:600 1.5rem/1.1 var(--fd)}.fg span{font-size:.74rem;color:rgba(255,255,255,.7)}
+.sc{display:none;align-items:center;min-height:48px;font-size:.84rem;font-weight:700;border-bottom:2px solid var(--g);text-decoration:none}
+/* cards */
+.pc{display:block;min-width:0}
+.pi{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--stone)}
+.ia{position:absolute;inset:0;display:block}
+.pi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .6s}
+.pi img.b{opacity:0}.pc:hover .pi img.b{opacity:1}.pc:hover .pi img.a{transform:scale(1.045)}
+.noimg::after{content:"H";position:absolute;inset:0;display:grid;place-items:center;font:600 4rem var(--fd);color:#cfc9bd}
+.bd{position:absolute;z-index:2;top:.8rem;left:.8rem;display:flex;gap:.35rem;pointer-events:none}.bd i{font:800 .62rem/1 var(--fb);font-style:normal;letter-spacing:.1em;text-transform:uppercase;padding:.38rem .6rem;border-radius:999px;background:#fff;color:#000}.bd .s{background:var(--red);color:#fff}
+.qv{position:absolute;z-index:2;left:50%;bottom:.9rem;display:none;align-items:center;gap:.5rem;min-height:44px;padding:0 1.3rem;border:0;border-radius:999px;background:#fff;box-shadow:var(--sh);font:700 .8rem var(--fb);cursor:pointer;transform:translate(-50%,170%);transition:transform .45s var(--ease)}
+.plus{position:absolute;z-index:2;right:.7rem;bottom:.7rem;width:44px;height:44px;border:0;border-radius:50%;background:#fff;box-shadow:var(--sh);font-size:1.4rem;line-height:1;cursor:pointer}
+@media(hover:hover){.qv{display:inline-flex}.plus{display:none}.pc:hover .qv{transform:translate(-50%,0)}}
+.pm{display:block;padding:1rem .1rem 0;text-decoration:none}
+.pn{font-size:.9rem;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pd{margin-top:.2rem;font-size:.78rem;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pr{margin-top:.5rem;font-size:.9rem;font-weight:700;font-variant-numeric:tabular-nums}.pr s{margin-left:.5rem;font-weight:500;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem .9rem}
+.car{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -1.25rem;padding:0 1.25rem}.car::-webkit-scrollbar{display:none}.car>.pc{flex:0 0 min(64vw,16rem);scroll-snap-align:start}
+.arr{display:none;gap:.5rem}.arr button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--line);background:#fff;cursor:pointer;display:grid;place-items:center}.arr button:hover{border-color:#000}
+/* collections */
+.cols{display:grid;gap:1rem}.col{position:relative;display:block;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--stone);color:#fff;text-decoration:none}
+.col img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}.col:hover img{transform:scale(1.05)}
+.col::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.72),transparent 60%)}
+.col div{position:absolute;z-index:1;left:1.5rem;right:1.5rem;bottom:1.4rem;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem}.col h3{font-size:2.1rem}.col small{display:block;font-size:.8rem;opacity:.85;margin-top:.3rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}.chips a{display:inline-flex;align-items:center;min-height:48px;padding:0 1.3rem;border:1.5px solid var(--line);border-radius:999px;font-weight:700;font-size:.85rem;text-decoration:none;background:#fff}.chips a:hover{border-color:#000}
+/* tabs */
+.tabs{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;margin:0 -1.25rem 2rem;padding:0 1.25rem}.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;min-height:48px;padding:0 1.3rem;border:1.5px solid var(--line);border-radius:999px;background:#fff;font-weight:700;font-size:.85rem;cursor:pointer;transition:all .2s}.tab:hover{border-color:#000}.tab[aria-selected=true]{background:#000;border-color:#000;color:#fff}
+/* bands */
+.promo{display:flex;flex-direction:column;align-items:flex-start;gap:1.4rem;padding:2.4rem 1.6rem;border-radius:var(--r);background:var(--g)}.promo h2{font-size:clamp(2.4rem,6vw,4rem)}.promo .pill{background:#000;color:#fff}
+.band{position:relative;display:flex;align-items:center;min-height:30rem;border-radius:var(--r);overflow:hidden;background:#141414;color:#fff}
+.band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.band::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(0,0,0,.84),rgba(0,0,0,.25))}
+.band>div{position:relative;z-index:2;padding:2.4rem 1.6rem;max-width:34rem}.band h2{font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:1rem}.band p{color:rgba(255,255,255,.85);margin-bottom:1.5rem}
+.two{display:flex;flex-wrap:wrap;gap:.75rem}
+/* studio, reviews, trust */
+.st{display:grid;gap:1rem}.sb{background:#000;color:#fff;border-radius:var(--r);padding:2.2rem 1.6rem;display:flex;flex-direction:column;align-items:flex-start;gap:1.3rem}.sb p.d{color:rgba(255,255,255,.82)}
+.pl{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}.pl li{padding:.45rem 1rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.82rem;font-weight:600}
+.si{background:var(--stone);border-radius:var(--r);padding:1.8rem;display:grid;gap:1.6rem;align-content:center}.si h3{font:700 .72rem var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.5rem;color:var(--mute)}.si a{display:inline-flex;align-items:center;min-height:48px;font-weight:600}
+.stars{display:flex;gap:.2rem;margin-bottom:1rem}
+.rev{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -1.25rem;padding:0 1.25rem}.rev::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(82vw,21rem);scroll-snap-align:start;margin:0;padding:1.8rem;background:#fff;border-radius:var(--r);box-shadow:var(--sh);display:flex;flex-direction:column;gap:1.2rem}.rv blockquote{margin:0;flex:1;font:500 1.3rem/1.35 var(--fd)}.rv figcaption{font-weight:700;font-size:.82rem;letter-spacing:.04em}.rv i{width:2rem;height:3px;background:var(--g)}
+.tr{display:grid;gap:1.8rem}.tr div{display:flex;gap:1rem}.tr .i{width:28px;height:28px;margin-top:3px}.tr h3{font-size:1.4rem;margin-bottom:.2rem}.tr p{font-size:.9rem;color:var(--mute)}
+footer{background:#000;color:#fff;padding:3rem 0;font-size:.9rem}footer .w{display:grid;gap:1.8rem}footer a{display:inline-flex;align-items:center;min-height:44px;margin-right:1.2rem;text-decoration:none;color:rgba(255,255,255,.85)}footer h3{font:700 .72rem var(--fb);letter-spacing:.16em;text-transform:uppercase;margin-bottom:.6rem;color:var(--g)}
+/* product page */
+#pdp{display:none}.pdp-on #pdp{display:block}.pdp-on #home{display:none}
+.bc{display:flex;flex-wrap:wrap;gap:.5rem;padding:1.1rem 0;font-size:.78rem;color:var(--mute)}.bc a{display:inline-flex;align-items:center;min-height:36px;text-decoration:none}.bc a:hover{color:#000}
+.pg{display:grid;gap:1.8rem;padding-bottom:3rem}
+.gal{position:relative;aspect-ratio:4/5;border-radius:var(--r);background:var(--stone);overflow:hidden}.gal img{width:100%;height:100%;object-fit:cover;transition:transform .25s}.gal.z img{transform:scale(2)}
+.pv{font:700 .72rem var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:.8rem}
+.pdp h1{font-size:clamp(2.2rem,4.4vw,3.4rem)}
+.price{display:flex;align-items:center;flex-wrap:wrap;gap:.8rem;margin:1.2rem 0 1.4rem}.price b{font:600 2.2rem var(--fd)}.price s{color:var(--mute)}
+.sp{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}.sp span{padding:.4rem .9rem;border-radius:999px;background:var(--stone);font-size:.78rem;font-weight:700}
+.opt{margin:0 0 1.4rem;padding:0;border:0}.opt legend{padding:0;margin-bottom:.7rem;font-size:.82rem;font-weight:700}
+.sw{display:flex;flex-wrap:wrap;gap:.5rem}.sw a{display:inline-flex;align-items:center;justify-content:center;min-width:48px;min-height:48px;padding:0 1.1rem;border:1.5px solid var(--line);border-radius:999px;font-weight:700;font-size:.88rem;text-decoration:none}.sw a:hover{border-color:#999}.sw a[aria-current]{border-color:var(--g);box-shadow:inset 0 0 0 1px var(--g)}
+.buy{display:grid;grid-template-columns:auto 1fr;gap:.7rem;margin-bottom:1rem}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px}.qty button{width:48px;height:52px;border:0;background:none;font-size:1.3rem;cursor:pointer}.qty output{min-width:2rem;text-align:center;font-weight:800}
+.buy .btn{min-height:52px;font-size:.95rem}
+.ln{display:grid;gap:.7rem;margin:1.5rem 0;padding:1.2rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:600;font-size:.9rem}.ln div{display:flex;gap:.8rem;align-items:center}
+.acc details{border-bottom:1px solid var(--line)}.acc summary{display:flex;align-items:center;justify-content:space-between;min-height:58px;font:600 1.25rem var(--fd);cursor:pointer;list-style:none}.acc summary::-webkit-details-marker{display:none}.acc summary::after{content:"+";font:400 1.5rem var(--fb)}.acc details[open] summary::after{content:"−"}
+.acc .b{padding:0 0 1.3rem;font-size:.92rem;color:#2a2a2a;display:grid;gap:.6rem}.acc dl{display:grid;grid-template-columns:7rem 1fr;gap:.5rem 1rem;margin:0}.acc dt{color:var(--mute)}.acc dd{margin:0;font-weight:700}
+.sbar{position:fixed;left:0;right:0;bottom:0;z-index:25;display:flex;align-items:center;gap:.8rem;padding:.65rem 1rem calc(.65rem + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line);box-shadow:0 -10px 28px rgba(0,0,0,.08);transform:translateY(110%);visibility:hidden;transition:transform .3s var(--ease),visibility .3s}.sbar.on{transform:none;visibility:visible}
+.sbar img{width:48px;height:48px;border-radius:8px;object-fit:cover}.sbar div{flex:1;min-width:0;font-size:.78rem;line-height:1.35}.sbar span{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.sbar strong{font-size:.95rem}
+.toast{position:fixed;left:50%;bottom:5.5rem;z-index:60;transform:translate(-50%,220%);background:#000;color:#fff;padding:.85rem 1.3rem;border-radius:999px;font-size:.84rem;font-weight:600;transition:transform .35s var(--ease);max-width:calc(100% - 2rem);text-align:center}.toast.on{transform:translate(-50%,0)}
+/* dialogs */
+dialog{width:calc(100% - 1.5rem);max-width:34rem;max-height:92vh;padding:0;border:0;border-radius:var(--r);overflow:auto;box-shadow:var(--sh)}dialog::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(3px)}
+.x{position:absolute;top:.4rem;right:.4rem;z-index:3;width:48px;height:48px;border:0;border-radius:50%;background:rgba(255,255,255,.9);font-size:1.6rem;cursor:pointer}
+#qd{max-width:54rem}.qg{display:grid}.qg .gal{border-radius:0;aspect-ratio:1}.qi{padding:1.6rem}.qi h2{font-size:1.9rem;margin:.4rem 0}
+.mh{padding:1.5rem 1.4rem 1rem;border-bottom:3px solid var(--g)}.mh h2{font-size:2rem}.mh p{font-size:.85rem;color:var(--mute);margin-top:.4rem}
+.mb{padding:1.1rem 1.4rem 1.4rem;display:grid;gap:.7rem}
+.rule{display:flex;gap:.9rem;align-items:center;text-align:left;width:100%;padding:.95rem;border:1.5px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;transition:border-color .15s,background .15s}
+.rule .ic{flex:0 0 2.6rem;height:2.6rem;border-radius:50%;background:var(--stone);display:grid;place-items:center}.rule b{display:block;font:600 1.2rem var(--fd)}.rule small{display:block;font-size:.82rem;color:#333;line-height:1.4;margin-top:.1rem}
+.rule .tk{margin-left:auto;flex:0 0 1.7rem;height:1.7rem;border-radius:50%;border:1.5px solid #bbb;display:grid;place-items:center;color:transparent}.rule .tk .i{width:15px;height:15px;stroke-width:3}
+.rule[aria-checked=true]{border-color:var(--g);background:#fff9ee}.rule[aria-checked=true] .tk{background:var(--g);border-color:var(--g);color:#000}
+.more{border:1px solid var(--line);border-radius:12px;font-size:.88rem}.more summary{min-height:48px;display:flex;align-items:center;padding:0 1rem;font-weight:700;cursor:pointer}.more ul{margin:0;padding:0 1rem 1rem 2.2rem;display:grid;gap:.45rem}
+.prog{display:flex;align-items:center;gap:.7rem;font-size:.82rem;font-weight:700}.bar{flex:1;height:5px;border-radius:3px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--g);transition:width .3s var(--ease)}
+#go{width:100%}#go[disabled]{opacity:.4;cursor:not-allowed}.fl{text-align:center;font-size:.8rem}.fl a{display:inline-flex;align-items:center;min-height:44px}
+@media(min-width:640px){.hbt{display:flex}.fg div{padding:0 2rem}.grid{grid-template-columns:repeat(3,1fr)}.cols{grid-template-columns:repeat(3,1fr)}.car>.pc{flex-basis:16rem}.promo{flex-direction:row;align-items:center;justify-content:space-between;padding:3rem}.band>div{padding:3.5rem}.tr{grid-template-columns:repeat(3,1fr)}.qg{grid-template-columns:1fr 1fr}.qi{padding:2.2rem 1.8rem}}
+@media(min-width:750px){.hero>img{object-position:center}.hero::before{background:linear-gradient(to right,rgba(0,0,0,.86),transparent 75%)}.hb{justify-content:center}.st{grid-template-columns:1.2fr 1fr}.sb{padding:3.4rem}footer .w{grid-template-columns:1.2fr 1fr 1fr}.tabs{margin:0 0 2.2rem;padding:0}}
+@media(min-width:990px){.w{padding:0 2.5rem}nav.m{display:flex}.sc{display:inline-flex}.fg{flex:0 0 auto}.arr{display:flex}.car,.rev{margin:0;padding:0}.rv{flex-basis:calc(25% - .75rem)}.grid{grid-template-columns:repeat(4,1fr);gap:2.8rem 1.4rem}.car>.pc{flex-basis:calc(25% - .75rem)}.hero h1{font-size:clamp(5rem,8vw,7.2rem)}
+.pg{grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start}.gal-w{position:sticky;top:6.5rem}.gal{cursor:zoom-in}.sbar{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="s" viewBox="0 0 24 24"><path fill="#dc9a2b" d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+<symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="al" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+<symbol id="bg" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 016 0v2"/></symbol><symbol id="st" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M4 9v11h16V9M9 20v-6h6v6"/></symbol>
+<symbol id="lk" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></symbol><symbol id="tk" viewBox="0 0 24 24"><path d="M1 6h13v10H1zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="cd" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol><symbol id="dr" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"/></symbol>
+<symbol id="ca" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol><symbol id="us" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol><symbol id="ck" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+</defs></svg>
+<header>
+  <div class="top">Design preview · <b>BUY 5 GET 1 FREE</b> on braiding hair</div>
+  <div class="w hd">
+    <a href="#"><img src="https://hairnergybraids.com/cdn/shop/files/Hairnergy-Braids_300x300.png?v=1688234860" alt="Hairnergy Braids" referrerpolicy="no-referrer"></a>
+    <nav class="m"><a href="#shop">Shop</a><a href="#new">New arrivals</a><a href="#best">Best sellers</a><a href="#collections">Collections</a><a href="#studio">Studio</a></nav>
+    <button class="btn gold" data-book>Book now</button>
+    <button class="bag" aria-label="Bag"><svg class="i"><use href="#bg"/></svg><span id="bagn">0</span></button>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <img id="heroimg" alt="" fetchpriority="high" referrerpolicy="no-referrer">
+  <div class="w hb"><div>
+    <span class="pill">Guelph braiding studio &amp; hair store</span>
+    <h1>We are HERE to make your <span class="hair">HAIR</span></h1>
+    <p class="s">Braids, crochet, locs, wigs and quality hair — you deserve the <strong>Hairnergy</strong> <em>Experience</em>.</p>
+    <div class="hbt"><a class="btn gold" href="#shop">Shop now</a><button class="btn ghost" data-book>Book now</button></div>
+  </div></div>
+  <div class="facts"><div class="w"><div class="fg"><div><b>5.0</b><span>Google rating</span></div><div><b>17</b><span>Client reviews</span></div><div><b>Guelph</b><span>Ontario studio</span></div></div><a class="sc" href="#collections">Scroll to explore</a></div></div>
+</section>
+
+<section class="sec" id="collections"><div class="w">
+  <div class="sh fx"><div><p class="eyebrow">Curated collections</p><h2 class="h2">Start with what<br>you came for</h2></div></div>
+  <div class="cols" id="cols"></div>
+  <div class="chips fx" id="chips"></div>
+</div></section>
+
+<section class="sec alt" id="new"><div class="w">
+  <div class="sh fx"><div><p class="eyebrow">Just landed</p><h2 class="h2">New arrivals</h2></div><div class="arr"><button data-sc="-1" aria-label="Previous"><svg class="i"><use href="#al"/></svg></button><button data-sc="1" aria-label="Next"><svg class="i"><use href="#ar"/></svg></button></div></div>
+  <div class="car fx" id="newcar"></div>
+</div></section>
+
+<section class="sec" id="shop"><div class="w">
+  <div class="sh fx"><div><p class="eyebrow">The shop</p><h2 class="h2">Shop by category</h2></div><a class="lk" id="tabAll" href="https://hairnergybraids.com/collections">Shop all <svg class="i"><use href="#ar"/></svg></a></div>
+  <div class="tabs fx" id="tabs" role="tablist"></div>
+  <div class="grid" id="tabgrid"></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="w"><div class="promo fx"><div><span class="pill" style="background:#000;color:#fff">Limited offer</span><h2 style="margin-top:1rem">BUY 5 GET 1 FREE</h2><p style="margin-top:.7rem;font-weight:600">Stock up on braiding hair extensions.</p></div><a class="btn dk" href="#shop">Shop now</a></div></div></section>
+
+<section class="sec alt" id="best"><div class="w">
+  <div class="sh fx"><div><p class="eyebrow">Loved by clients</p><h2 class="h2">Best sellers</h2></div><a class="lk" href="https://hairnergybraids.com/collections/frontpage">Shop all <svg class="i"><use href="#ar"/></svg></a></div>
+  <div class="grid" id="bestgrid"></div>
+</div></section>
+
+<section class="sec"><div class="w"><div class="band fx" id="band">
+  <div><p class="eyebrow" style="color:#fff">African Print RTW by Bonike Prints</p><h2>FABRICS &amp; PRINTS</h2><p>Ankara and Adire fabrics, ready-to-wear dresses, bubu and kimono.</p>
+  <div class="two"><a class="btn gold" href="https://hairnergybraids.com/collections/ankara-african-print-dresses">Shop dresses</a><a class="btn ghost" href="https://hairnergybraids.com/collections/prints">Shop fabrics</a></div></div>
+</div></div></section>
+
+<section class="sec" id="studio" style="padding-top:0"><div class="w st">
+  <div class="sb fx">
+    <p class="eyebrow">The Guelph braiding studio</p>
+    <h2 class="h2">We are HERE to make your HAIR</h2>
+    <p class="d">Traditional Box braids, knotless braids, cornrow styles, stitch braids, crochet, nu/soft locs, or just simple underwig cornrows — we’ve got you covered. You deserve the Hairnergy Experience.</p>
+    <ul class="pl"><li>Box braids</li><li>Knotless braids</li><li>Cornrows</li><li>Stitch braids</li><li>Crochet</li><li>Nu / soft locs</li><li>Underwig cornrows</li></ul>
+    <button class="btn gold" data-book>Book an appointment</button>
+  </div>
+  <div class="si fx" style="--d:.1s">
+    <div><h3>Address</h3><a href="https://maps.google.com/?daddr=33+Dougall+St,+Guelph,+ON,+N1E+0H3" target="_blank" rel="noopener">33 Dougall Street, Guelph, ON N1E 0H3</a></div>
+    <div><h3>Hours</h3>Mon – Fri: 10AM – 8PM<br>Saturday: 9AM – 9PM<br>Sunday: Closed</div>
+    <div><h3>Questions before booking?</h3><a href="tel:+15879662280">+1 587 966 2280</a></div>
+  </div>
+</div></section>
+
+<section class="sec alt"><div class="w">
+  <div class="stars fx"><svg width="22" height="22"><use href="#s"/></svg><svg width="22" height="22"><use href="#s"/></svg><svg width="22" height="22"><use href="#s"/></svg><svg width="22" height="22"><use href="#s"/></svg><svg width="22" height="22"><use href="#s"/></svg></div>
+  <h2 class="h2 fx" style="margin-bottom:2.2rem">5.0 on Google · 17 reviews</h2>
+  <div class="rev fx" id="rev"></div>
+</div></section>
+
+<section class="sec"><div class="w tr">
+  <div class="fx"><svg class="i"><use href="#st"/></svg><span><h3>Studio + store in one</h3><p>Get braided and shop your hair in the exact same place.</p></span></div>
+  <div class="fx" style="--d:.08s"><svg class="i"><use href="#lk"/></svg><span><h3>Secure checkout</h3><p>Shop safely online in Canadian dollars (CAD).</p></span></div>
+  <div class="fx" style="--d:.16s"><svg class="i"><use href="#tk"/></svg><span><h3>Delivery across Canada</h3><p>Hair extensions, wigs, hair care, and prints delivered right to you.</p></span></div>
+</div></section>
+</main>
+
+<main id="pdp" class="pdp"></main>
+<div class="sbar" id="sbar"></div><div class="toast" id="toast"></div>
+
+<footer><div class="w">
+  <div><h3>Hairnergy Braids</h3><p>33 Dougall Street, Guelph, ON N1E 0H3</p><p>Mon – Fri 10AM – 8PM · Sat 9AM – 9PM · Sun closed</p></div>
+  <div><h3>Follow</h3><a href="https://www.instagram.com/hairnergybraids/">Instagram</a><a href="https://www.facebook.com/Hairnergybraids">Facebook</a><a href="https://www.youtube.com/hairnergybraids">YouTube</a></div>
+  <div><h3>Help</h3><a href="https://hairnergybraids.com/pages/booking-policy">Booking policy</a><a href="https://hairnergybraids.com/pages/faqs">FAQs</a><a href="https://hairnergybraids.com/pages/contact-us">Contact</a></div>
+</div></footer>
+
+<dialog id="qd" aria-label="Quick view"></dialog>
+
+<dialog id="bk" aria-labelledby="bkt">
+  <button class="x" data-x aria-label="Close">×</button>
+  <div class="mh"><h2 id="bkt">Before you book</h2><p>4 quick things. Tap each one to confirm you’re good with it.</p></div>
+  <div class="mb">
+    <button class="rule" role="checkbox" aria-checked="false"><span class="ic"><svg class="i"><use href="#cd"/></svg></span><span><b>$50 deposit</b><small>Non-refundable. It holds your slot. The rest is due in cash or e-transfer after your hair, plus 13% HST.</small></span><span class="tk"><svg class="i"><use href="#ck"/></svg></span></button>
+    <button class="rule" role="checkbox" aria-checked="false"><span class="ic"><svg class="i"><use href="#dr"/></svg></span><span><b>Come with hair ready</b><small>Freshly washed, product-free, stretched or blown out from root to end. If we do it, it’s $20 extra.</small></span><span class="tk"><svg class="i"><use href="#ck"/></svg></span></button>
+    <button class="rule" role="checkbox" aria-checked="false"><span class="ic"><svg class="i"><use href="#ca"/></svg></span><span><b>Plans change? Tell us 3+ days ahead</b><small>Moving the date costs 60% of your deposit. No changes in peak months: Jun, Jul, Sep, Nov, Dec.</small></span><span class="tk"><svg class="i"><use href="#ck"/></svg></span></button>
+    <button class="rule" role="checkbox" aria-checked="false"><span class="ic"><svg class="i"><use href="#us"/></svg></span><span><b>Just you, please</b><small>No extra guests (family and friends too), no pets, smoking or drinking. Bring earphones.</small></span><span class="tk"><svg class="i"><use href="#ck"/></svg></span></button>
+    <details class="more"><summary>Good to know (optional)</summary><ul>
+      <li>Some styles run 2 to 5 hours longer (boho with human hair, small sizes, waist or bum length). Keep your day free.</li>
+      <li>Don’t book a start after 4pm without messaging first.</li>
+      <li>Hair shorter than 5 inches, hair loss or damaged edges? Call before booking.</li>
+      <li>Hair that needs cutting, stretching or brushing: $10+ per pack.</li>
+      <li>Same-value style swaps only. Prices are fixed. No refunds after service.</li>
+      <li>Emergency, squeeze-in or day-off appointments: $50 upcharge.</li>
+    </ul></details>
+    <div class="prog"><span id="cnt">0 of 4 confirmed</span><span class="bar"><i id="fill"></i></span></div>
+    <button class="btn gold" id="go" disabled>Continue to Booking Calendar →</button>
+    <p class="fl"><a href="https://hairnergybraids.com/pages/booking-policy" target="_blank" rel="noopener">Read the full policy</a></p>
+  </div>
+</dialog>
+
+<script>
+const B='https://hairnergybraids.com/',IMG=(p,n=700)=>B+'cdn/shop/'+p.replace(/(\.\w+)\?/,'_'+n+'x$1?');
+/* [slug, title, price, was, image, optional 2nd image (shown on hover)] */
+const S={
+extensions:['Crochet & human hair','The Hairnergy Glam','hairnergy-braiding-extension',0,[
+['5-2','Burmese Curly Crochet Human Hair Natural Black 16"','99.00','199.00','files/GlossyCurlyHairExtensionShowcase.png?v=1790431962'],
+['deep-curl-braid-hair-bulk-100-human-hair-extensions-bulk-for-braiding-100g','Deep Curl Bulk Hair Extensions for Braiding 100% Human Hair 100g','from 92.00','124.00','files/FullSizeRender_f9f1a605-61fb-4245-9583-7d6990a0afc9.jpg?v=1701574418'],
+['4-2','Deep Curl Crochet Human Hair Natural Black 18"','99.00','199.00','files/DeepWaveBeautyHairCollage.png?v=1790431991'],
+['deep-wave-braid-hair-bulk-100-human-hair-extensions-bulk-for-braiding-100g','Deep Wave Bulk Hair Extensions for Braiding 100% Human Hair 100g','from 92.00','99.00','files/C81F7F47-93C3-477F-B3E0-FB6B2719CC1E.jpg?v=1701610816'],
+['6-1','Deep Wave Crochet Human Hair Natural Black 14"','89.00','180.00','files/DeepWaveCrochetHairPortraitandProductDuo.png?v=1790431932']]],
+braiding:['Braiding hair extensions','Braiding hair extension','braiding-hair',0,[
+['3x-pre-stretched-braid-50','X-Pression Pre-stretched Braiding Hair 50" Color 1','12.99','','products/F80D8269-B7F2-47E6-B777-24E197129484.jpg?v=1618450324'],
+['x-pression-3x-pre-stretched-braid-50-colour-1b','X-Pression Pre-stretched Braiding Hair 50" Color 1b','12.99','','products/32250F23-60D2-4A6A-AAC5-3CBD5EC06437.jpg?v=1618492413'],
+['copy-of-x-pression-3x-pre-stretched-braid-50-colour-1-27','X-Pression Pre-stretched Braiding Hair 50" Color 1/27','12.99','','products/39B9C9AF-9CD4-481F-BCD1-754298B96879.jpg?v=1618450365'],
+['copy-of-copy-of-x-pression-3x-pre-stretched-braid-50-colour-27','X-Pression Pre-stretched Braiding Hair 50" Color 27','11.99','','products/E0BDC11B-7656-453B-BC70-B4154F600DB3.jpg?v=1618492220'],
+['copy-of-copy-of-copy-of-x-pression-3x-pre-stretched-braid-50-colour-30','X-Pression Pre-stretched Braiding Hair 50" Color 30','12.99','','products/0375B418-762B-4F45-995C-F04323A08B76.jpg?v=1618492162']]],
+wigs:['Custom wigs & offers','TIME FOR A NEW WIG?','wigs',1,[
+['straight-5x5-hd-lace-closure-glueless-wigs-200-density-100-human-hair','Straight 5x5 HD Lace Closure Glueless Wig 200% Density 100% Human Hair','547.00','912.00','files/2B873B07-EED1-4E30-AB47-7BFAB51F5817.jpg?v=1716475976'],
+['natural-wave-headband-human-hair-wig-180-density-no-glue-needed','Natural Wave Headband Wig 100% Human Hair 180% Density Glueless','from 169.00','281.00','files/4E5057EA-D16C-4CA4-B95C-923683F70F36.jpg?v=1716395575'],
+['kinky-straight-headband-human-hair-wig-180-density-no-glue-needed-natural-black','Kinky Straight Headband Wig 100% Human Hair 180% Density Glueless','from 189.00','315.00','files/F8DB7DC6-C6C2-4CD2-B266-2F692F94D4A6.jpg?v=1716393866'],
+['afro-curly-headband-afro-fluffy-wig-style-2','Afro Curly Headband Afro Fluffy Wig. Style 2','43.20','79.00','files/PhotoRoom_20230621_123709.jpg?v=1687398024'],
+['deep-wave-5x5-hd-lace-closure-glueless-wigs-230-density-100-human-hair','Deep Wave 5x5 HD Lace Closure Glueless Wig 230% Density 100% Human Hair','from 399.00','665.00','files/71743019-2958-432C-8456-13EC73E8C82F.jpg?v=1716475867']]],
+prints:['Ready-to-wear dresses','RTW African print dresses','ankara-african-print-dresses',0,[
+['african-print-ankara-kimono-one-size-dress-kiekie-kimono-004','African Print Ankara Kimono One Size Dress - Kiekie Kimono (004)','45.00','60.00','files/341EC889-A908-415A-957D-C5507997AC11.jpg?v=1731679029'],
+['tami-beautiful-african-print-ankara-dress','Diora 08 - Beautiful African Print Ankara Dress','69.00','120.00','files/B6C3725F-EB1D-47C2-B6DA-D318FAA8E2D9.jpg?v=1730855798'],
+['tori-bubu-02','Tori Bubu Ankara Short Dress 03 - Yellow and MultiC','59.00','89.00','files/CDA8E4C2-1202-4A80-864A-3DD329EB01C5.jpg?v=1743773188'],
+['the-tandi-dress-bold-beautiful-afrocentric-print-midi-dress-blue-orange','Bold and Beautiful Tandi Dress – Blue & Orange','69.00','99.00','files/95B2330A-FCB1-48FA-8564-6D63F099ED76.jpg?v=1743904106']]],
+care:['Hair care','What’s new?','new-arrivals',0,[
+['21','CAROL’S DAUGHTER Hair Milk Original Leave In Moisturizer (8oz)','27.99','29.99','files/40AF7632-FC3C-48A2-BC70-855156D2DB59.png?v=1790134554'],
+['19','CAROL’S DAUGHTER Hair Milk Refresher Spray (10oz)','21.99','29.99','files/CDA22612_1_1.webp?v=1790188877'],
+['16','THE DOUX Big Poppa Defining Gel (16oz)','20.99','23.99','files/F423BEA4-6518-4874-9C8E-96A8CC73E5D5.jpg?v=1790134553'],
+['15','THE DOUX Mousse Def Texture Foam (7oz)','23.99','','files/93D44442-DA52-473B-9538-35FAAC4855B4.jpg?v=1790134553'],
+['14','THE DOUX Dear Mama Moisture Milk (12oz)','19.99','24.99','files/E0FD7EDC-F212-4481-ACFA-A329888B117E.jpg?v=1790134553']]],
+oils:['Oils & pomades','OILS & MORE','oils-pomades',0,[
+['20','COCOCARE 100% Natural Jojoba Oil (2oz)','14.99','16.99','files/EDA2F433-E008-4594-9BBA-41AC2BD580AA.jpg?v=1790134553'],
+['12','CANTU Shea Butter Coconut Curling Cream (12oz)','15.99','','files/0920D53A-58EC-4AC5-BC49-B1BE5E5F3785.jpg?v=1790134553'],
+['10','Cantu Kids Hair & Scalp Oil (4oz)','9.99','12.99','files/7C2596CC-4EE2-4386-A570-1C3125752316.jpg?v=1790134553'],
+['6','BLUE MAGIC Coconut Oil Hair Conditioner (12oz)','8.99','','files/1950D7E1-93A8-42DE-820B-D1884A3FEAA4.jpg?v=1790134553']]]
+};
+S.care[4].push(['13','THE DOUX Break Down Clarifying Shampoo (12oz)','19.99','24.99','files/94E9B260-7AAD-482B-8ACE-2E40DF979F44.jpg?v=1790134553']);
+/* Merchandising: edit these lists. NEW = her "What's new?" row. BEST = placeholder pick, replace with her real best sellers. */
+const NEW=S.care[4].map(x=>x[0]);
+const BEST=['5-2','deep-curl-braid-hair-bulk-100-human-hair-extensions-bulk-for-braiding-100g','natural-wave-headband-human-hair-wig-180-density-no-glue-needed','tori-bubu-02','3x-pre-stretched-braid-50','straight-5x5-hd-lace-closure-glueless-wigs-200-density-100-human-hair','the-tandi-dress-bold-beautiful-afrocentric-print-midi-dress-blue-orange','21'];
+const CL={braiding:'Braiding hair',extensions:'Crochet & human hair',wigs:'Wigs',prints:'African print',care:'Hair care',oils:'Oils & pomades'};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=t=>t.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+const num=v=>parseFloat(v.replace('from ','')),fmt=v=>(v.startsWith('from')?'from $'+v.slice(5):'$'+v)+' CAD';
+const ic=n=>`<svg class="i"><use href="#${n}"/></svg>`;
+const ALL={};for(const k in S)S[k][4].forEach(p=>ALL[p[0]]={k,s:p[0],t:p[1],p:p[2],w:p[3],i:p[4],i2:p[5]});
+const off=p=>p.w?Math.round((1-num(p.p)/num(p.w))*100):0;
+/* images: sized URL -> original URL -> neutral placeholder */
+const im=(p,w,c='')=>`<img class="${c}" src="${IMG(p.i,w)}" data-o="${B}cdn/shop/${p.i}" alt="${esc(p.t)}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`;
+addEventListener('error',e=>{const t=e.target;if(!t||t.tagName!='IMG')return;if(t.dataset.o&&!t.dataset.r){t.dataset.r=1;t.src=t.dataset.o}else{t.style.display='none';t.parentElement.classList.add('noimg')}},true);
+function specs(t){const o=[];let m;
+  if(/100% Human Hair/i.test(t))o.push(['Hair','100% human hair']);
+  if(m=t.match(/(Deep Wave|Deep Curl|Natural Wave|Kinky Straight|Straight|Burmese Curly|Afro Curly)/i))o.push(['Texture',m[1]]);
+  if(m=t.match(/(\d+)% Density/))o.push(['Density',m[1]+'%']);
+  if(/Glueless/i.test(t))o.push(['Fit','Glueless']);
+  if(m=t.match(/(\d+)"/))o.push(['Length',m[0]]);
+  if(m=t.match(/\b(\d+\s?(?:g|oz))\b/))o.push(['Size',m[1]]);
+  if(m=t.match(/Colou?r (\S+)/))o.push(['Colour',m[1]]);
+  return o}
+const desc=p=>[CL[p.k],...specs(p.t).filter(s=>['Density','Fit','Length','Size','Colour'].includes(s[0])).slice(0,2).map(s=>s[0]=='Density'?s[1]+' density':s[0]=='Colour'?'Colour '+s[1]:s[1])].join(' · ');
+const card=p=>`<article class="pc"><div class="pi"><a class="ia" href="#/p/${p.s}" aria-label="${esc(p.t)}">${im(p,700,'a')}${p.i2?`<img class="b" src="${IMG(p.i2,700)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:''}</a><span class="bd">${NEW.includes(p.s)?'<i>New</i>':''}${BEST.includes(p.s)?'<i>Bestseller</i>':''}${p.w?`<i class="s">−${off(p)}%</i>`:''}</span><button class="qv" data-qv="${p.s}">Quick view</button><button class="plus" data-qv="${p.s}" aria-label="Quick view">+</button></div><a class="pm" href="#/p/${p.s}"><h3 class="pn" style="font-family:var(--fb);letter-spacing:0;line-height:1.4">${esc(p.t)}</h3><p class="pd">${esc(desc(p))}</p><p class="pr">${fmt(p.p)}${p.w?`<s>$${p.w} CAD</s>`:''}</p></a></article>`;
+const list=a=>a.map(s=>card(ALL[s])).join('');
+
+/* homepage */
+$('#heroimg').src=IMG('files/1EAF9623-CAB1-4BE1-826D-BA3A453B2164.png?v=1789491960',1600);
+$('#band').insertAdjacentHTML('afterbegin',`<img src="${IMG('files/FD50229F-D895-4C6B-871D-23443B2049F5.png?v=1775834575',1600)}" alt="" loading="lazy" referrerpolicy="no-referrer">`);
+$('#cols').innerHTML=[['braiding','Braiding hair','Pre-stretched, ready to braid'],['wigs','Wigs','Glueless, headband and lace'],['prints','African prints','Dresses, kimono and bubu']].map(([k,l,s],n)=>`<a class="col fx" style="--d:${n*.1}s" href="#shop" data-tab="${k}">${im(ALL[S[k][4][0][0]],900)}<div><span><h3>${l}</h3><small>${s}</small></span>${ic('ar')}</div></a>`).join('');
+$('#chips').innerHTML=[['extensions','Crochet hair'],['care','Hair care'],['oils','Oils & pomades']].map(([k,l])=>`<a href="#shop" data-tab="${k}">${l}</a>`).join('');
+$('#newcar').innerHTML=list(NEW);
+$('#bestgrid').innerHTML=list(BEST);
+const COL={braiding:'braiding-hair',extensions:'hairnergy-braiding-extension',wigs:'wigs',prints:'ankara-african-print-dresses',care:'new-arrivals',oils:'oils-pomades'};
+$('#tabs').innerHTML=Object.keys(CL).map(k=>`<button class="tab" role="tab" data-t="${k}">${CL[k]}</button>`).join('');
+function tab(k){$$('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.t==k));$('#tabgrid').innerHTML=list(S[k][4].map(x=>x[0]));$('#tabAll').href=B+'collections/'+COL[k];$$('#tabgrid .pc').forEach((c,i)=>{c.style.opacity=0;c.style.transform='translateY(14px)';requestAnimationFrame(()=>{c.style.transition='opacity .6s var(--ease) '+i*.05+'s,transform .6s var(--ease) '+i*.05+'s';c.style.opacity=1;c.style.transform='none'})})}
+$('#tabs').onclick=e=>{const b=e.target.closest('.tab');b&&tab(b.dataset.t)};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-tab]');a&&tab(a.dataset.tab)});
+tab('braiding');
+$('#rev').innerHTML=[['The best hair braiding studio in Guelph. Clean, fast, and my knotless braids lasted over 8 weeks!','Adeola S.'],['Loved the experience! The studio is calm, friendly, and professional. The braiding extensions matched my texture perfectly.','Maya T.'],['Got my boho braids done here and received endless compliments. 10/10 service and gentle hands!','Blessing O.'],['So convenient to get my hair braided and buy my extensions and hair-care products in the exact same place.','Jessica M.']].map(([q,a])=>`<figure class="rv"><i></i><blockquote>${q}</blockquote><figcaption>${a}</figcaption></figure>`).join('');
+$('[data-sc]').parentElement.onclick=e=>{const b=e.target.closest('[data-sc]');b&&$('#newcar').scrollBy({left:b.dataset.sc*$('#newcar').clientWidth*.8,behavior:'smooth'})};
+/* fade-in on scroll */
+const fxo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');fxo.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+const fx=()=>$$('.fx:not(.in)').forEach(el=>fxo.observe(el));fx();
+
+/* bag + toast */
+let bag=0,io;
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2600)};
+const add=q=>{bag+=q;const b=$('#bagn');b.textContent=bag;b.classList.add('on');toast('Added to bag · preview only, checkout lives on hairnergybraids.com')};
+const sibs=p=>{const stem=p.t.replace(/\s*Color\s+\S+$/,'');return S[p.k][4].map(x=>ALL[x[0]]).filter(x=>x.t.replace(/\s*Color\s+\S+$/,'')==stem&&/Color\s+\S+$/.test(x.t))};
+const sw=(p,fn)=>{const s=sibs(p);return s.length>1?`<fieldset class="opt"><legend>Colour</legend><div class="sw">${s.map(x=>`<a href="${fn(x)}" ${x.s==p.s?'aria-current="true"':''} data-q2="${x.s}">${x.t.match(/Color\s+(\S+)$/)[1]}</a>`).join('')}</div></fieldset>`:''};
+const price=p=>`<div class="price"><b>${fmt(p.p)}</b>${p.w?`<s>$${p.w} CAD</s><span class="pill">Save $${(num(p.w)-num(p.p)).toFixed(2)}</span>`:''}</div>`;
+const qtyUI=()=>`<div class="buy"><div class="qty"><button aria-label="Less" data-q="-1">−</button><output>1</output><button aria-label="More" data-q="1">+</button></div><button class="btn gold" data-add>Add to bag</button></div>`;
+function wire(root){let q=1;const o=$('output',root);$$('[data-q]',root).forEach(b=>b.onclick=()=>{q=Math.max(1,q+ +b.dataset.q);o.textContent=q});$$('[data-add]',root).forEach(b=>b.onclick=()=>add(q))}
+/* quick view */
+const qd=$('#qd');
+function qview(p){qd.innerHTML=`<button class="x" data-x aria-label="Close">×</button><div class="qg"><div class="gal">${im(p,900)}</div><div class="qi"><p class="pv">${CL[p.k]}</p><h2>${esc(p.t)}</h2>${price(p)}${sw(p,()=>'#')}${qtyUI()}<a class="lk" href="#/p/${p.s}" data-full>Full details ${ic('ar')}</a></div></div>`;wire(qd);
+  $$('[data-q2]',qd).forEach(a=>a.onclick=e=>{e.preventDefault();qview(ALL[a.dataset.q2])});$('[data-full]',qd).onclick=()=>qd.close();qd.showModal()}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-qv]');if(b)qview(ALL[b.dataset.qv]);if(e.target.closest('[data-x]'))e.target.closest('dialog').close();if(e.target.tagName=='DIALOG')e.target.close()});
+
+/* single product page */
+function pdp(p){
+  const sp=specs(p.t),more=S[p.k][4].map(x=>ALL[x[0]]).filter(x=>x.s!=p.s).slice(0,4);
+  $('#pdp').innerHTML=`<div class="w"><nav class="bc"><a href="#">Home</a>/<a href="#shop" data-tab="${p.k}">${CL[p.k]}</a>/<span>${esc(p.t)}</span></nav>
+  <div class="pg"><div class="gal-w"><div class="gal" id="gal">${im(p,1200).replace('lazy','eager')}</div></div>
+  <div><p class="pv">Hairnergy Braids</p><h1>${esc(p.t)}</h1>${price(p)}
+  ${sp.length?`<div class="sp">${sp.map(s=>`<span>${s[1]}</span>`).join('')}</div>`:''}${sw(p,x=>'#/p/'+x.s)}
+  ${qtyUI().replace('Add to bag','Add to bag · '+fmt(p.p)).replace('data-add','data-add id="add"')}
+  <a class="lk" href="${B}products/${p.s}" target="_blank" rel="noopener">See this product on hairnergybraids.com ${ic('ar')}</a>
+  <div class="ln"><div>${ic('st')}Studio pickup available in Guelph, ON</div><div>${ic('tk')}Fast Canada-wide shipping</div></div>
+  <div class="acc"><details open><summary>Details</summary><div class="b">${sp.length?`<dl>${sp.map(s=>`<dt>${s[0]}</dt><dd>${s[1]}</dd>`).join('')}</dl>`:''}<p>Full description, sizes and colours are shown on the live product page.</p></div></details>
+  <details><summary>Braiding &amp; care guide</summary><div class="b"><p><b>Washing.</b> Wash your scalp and braids every 2 to 3 weeks with diluted shampoo, rinse well and dry fully.</p><p><b>Oiling.</b> A light oil or braid spray on scalp and edges a few times a week. Avoid heavy buildup.</p><p><b>Night care.</b> Tie braids up and sleep on satin to cut frizz.</p></div></details>
+  <details><summary>Shipping &amp; Guelph pickup</summary><div class="b"><p>We ship across Canada. Delivery options and costs show at checkout.</p><p>Pick up at 33 Dougall Street, Guelph, ON N1E 0H3. Mon – Fri 10AM – 8PM · Sat 9AM – 9PM · Sun closed.</p></div></details></div></div></div>
+  <section class="sec" style="padding-top:1rem"><div class="sh"><div><p class="eyebrow">More from</p><h2 class="h2">${CL[p.k]}</h2></div><a class="lk" href="#shop" data-tab="${p.k}">Back to shop ${ic('ar')}</a></div><div class="grid">${more.map(card).join('')}</div></section></div>`;
+  $('#sbar').innerHTML=`<img src="${IMG(p.i,200)}" alt="" referrerpolicy="no-referrer"><div><span>${esc(p.t)}</span><strong>${fmt(p.p)}</strong></div><button class="btn gold" data-add1>Add to bag</button>`;
+  wire($('#pdp'));$('[data-add1]').onclick=()=>add(1);
+  const g=$('#gal');g.onmousemove=e=>{if(innerWidth<990)return;const r=g.getBoundingClientRect();g.firstChild.style.transformOrigin=((e.clientX-r.left)/r.width*100)+'% '+((e.clientY-r.top)/r.height*100)+'%';g.classList.add('z')};g.onmouseleave=()=>g.classList.remove('z');
+  io&&io.disconnect();io=new IntersectionObserver(e=>$('#sbar').classList.toggle('on',!e[0].isIntersecting&&e[0].boundingClientRect.top<0));io.observe($('#add'));
+}
+function route(){
+  const m=location.hash.match(/^#\/p\/(.+)$/),p=m&&ALL[decodeURIComponent(m[1])];
+  document.body.classList.toggle('pdp-on',!!p);
+  if(p){pdp(p);document.title=p.t+' | Hairnergy Braids';scrollTo(0,0)}
+  else{io&&io.disconnect();$('#sbar').classList.remove('on');document.title='Hairnergy Braids | Guelph braiding studio & hair store (design preview)';const id=location.hash.slice(1);if(id&&!id.startsWith('/'))requestAnimationFrame(()=>{const el=document.getElementById(id);el&&el.scrollIntoView()});fx()}
+}
+addEventListener('hashchange',route);route();
+/* booking guide */
+const dlg=$('#bk'),rules=$$('.rule'),go=$('#go');
+function upd(){const c=rules.filter(r=>r.getAttribute('aria-checked')=='true').length;$('#cnt').textContent=c+' of 4 confirmed';$('#fill').style.width=c*25+'%';go.disabled=c<4}
+rules.forEach(r=>r.onclick=()=>{r.setAttribute('aria-checked',r.getAttribute('aria-checked')!='true');upd()});
+document.addEventListener('click',e=>{if(e.target.closest('[data-book]')){rules.forEach(r=>r.setAttribute('aria-checked','false'));upd();dlg.showModal()}});
+go.onclick=()=>{location.href=B+'pages/book'};
+</script>
+</body>
+</html>
